@@ -76,7 +76,7 @@
         Telegram.WebApp.ready();
         Telegram.WebApp.expand();
 
-        const ws = new WebSocket("wss://your-backend-url/ws");
+        const ws = new WebSocket("wss://keyword-monitor-backend.onrender.com/ws");
 
         ws.onmessage = function(event) {
             const data = JSON.parse(event.data);
